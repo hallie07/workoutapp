@@ -8,14 +8,17 @@ ui <- fluidPage(
    # Application title
    titlePanel("Steve's Workout Dashboard"),
    
-
-mainPanel(
-     textInput("weight", "Today's Weight", " "),
-     verbatimTextOutput("value"))
+   navbarPage("Workout Tracker",
+              tabPanel("Daily Stat Input"),
+              navbarMenu("Progress Trackers",
+                         tabPanel("Weight Tracker"),
+                         tabPanel("Measurement Tracker"),
+                         tabPanel("Lifting Tracker"), 
+                         tabPanel ("Cardio Tracker"))
    
    
       
-)
+))
 
 
 

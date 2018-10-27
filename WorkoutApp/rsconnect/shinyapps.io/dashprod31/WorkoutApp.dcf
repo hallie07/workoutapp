@@ -1,0 +1,12 @@
+name: WorkoutApp
+title: WorkoutApp
+username:
+account: dashprod31
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 537606
+bundleId: 1665798
+url: https://dashprod31.shinyapps.io/WorkoutApp/
+when: 1540610557.53676
+asMultiple: FALSE
+asStatic: FALSE

@@ -15,20 +15,12 @@ ui <- fluidPage(
    # Application title
    titlePanel("Old Faithful Geyser Data"),
    
-   # Sidebar with a slider input for number of bins 
-   sidebarLayout(
-      sidebarPanel(
-         sliderInput("bins",
-                     "Number of bins:",
-                     min = 1,
-                     max = 50,
-                     value = 30),
-         sliderInput("bins",
-                     "Number of bins 2:",
-                     min = 1,
-                     max = 50,
-                     value = 30)
-      ),
+
+
+     textInput("caption", "Caption", "Data Summary"),
+     verbatimTextOutput("value")
+   
+   
       
       # Show a plot of the generated distribution
       mainPanel(

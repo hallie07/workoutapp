@@ -13,10 +13,16 @@ ui <- fluidPage( theme = shinytheme("superhero"),
               tabPanel(("Daily Stat Input"),
                        mainPanel(
                          fluidRow(  
-                           textInput("date", "Today's Date"),
-                                    verbatimTextOutput("date"), 
-                           textInput("weight", "Today's Weight"),
-                           verbatimTextOutput("weight")))),
+                           column(3,textInput("date", "Today's Date"),
+                                    verbatimTextOutput("date")), 
+                           column(3,textInput("weight", "Today's Weight"),
+                           verbatimTextOutput("weight")),
+                           column(3,textInput("cardio", "Today's Cardio"),
+                                  verbatimTextOutput("Cardio")),
+                           column(3,textInput("calories", "Today's Calories"),
+                                  verbatimTextOutput("Calories"))
+                           
+                           ),width=12)),
               navbarMenu("Progress Trackers",
                          tabPanel("Weight Tracker", mainPanel("PUT WEIGHT TREND GRAPH HERE")),
                          tabPanel("Measurement Tracker", mainPanel("PUT MEASUREMENT TRACKERS HERE")),
